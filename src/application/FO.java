@@ -3,15 +3,12 @@ package application;
 import java.nio.file.*;
 import java.util.stream.Stream;
 
-import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
-import static java.nio.file.StandardWatchEventKinds.ENTRY_DELETE;
-import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
-
+import static java.nio.file.StandardWatchEventKinds.*;
 public class FO {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		Path dirpath = Paths.get("C:\\Test");
+		Path dirpath = Paths.get("Z:\\Sertif");
 
 		if (!Files.exists(dirpath)) {
 			Files.createDirectories(dirpath);
