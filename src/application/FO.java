@@ -8,7 +8,9 @@ public class FO {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		Path dirpath = Paths.get("Z:\\Sertif");
+		// .. это папка выше т.е. home
+		Path dirpath = Paths.get("../Apps");
+		System.out.println(dirpath);
 
 		if (!Files.exists(dirpath)) {
 			Files.createDirectories(dirpath);
